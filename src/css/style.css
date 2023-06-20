@@ -1,0 +1,211 @@
+/*=== FARBEN ===*/
+
+:root{
+    --background:#36c336;
+    --rechner: #ffbc14;
+    --buttons: #165816;
+    --dark-background:#165816;
+    --dark-rechner: #b8860b;
+    --dark-buttons: #8fbc8f;
+
+    --background-icon: url(../icons/mond.png);
+}
+
+/*=== FARBEN ===*/
+
+
+/*=== FONT ===*/
+
+@font-face {
+    font-family: "myfont";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/Retron2000.ttf") format("truetype");
+}
+
+/*=== FONT ===*/
+
+
+/*=== GENERELLES ===*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "myfont";
+}
+
+body{
+    background-color: var(--background);
+    transition: background-color 1s;
+    width: 100%;
+}
+
+/*=== GENERELLES ===*/
+
+
+/*=== GRID-SYTEM-CONTAINER ===*/
+
+.Taschenrechner-Container{
+    width: 400px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
+    grid-template-areas: 
+    "screen screen screen screen"
+    "eins zwei drei plus"
+    "vier fünf sechs minus"
+    "sieben acht neun mal"
+    "clear null komma teilen"
+    "gleich gleich gleich gleich";
+    background-color: var(--rechner);
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    transition: background-color 1s;
+}
+
+#komma{
+    grid-area: komma;
+}
+
+#screen{
+    grid-area: screen;
+}
+#eins{
+    grid-area: eins;
+}
+#zwei{
+    grid-area: zwei;
+}
+#drei{
+    grid-area: drei;
+}
+#plus{
+    grid-area: plus;
+}
+#vier{
+    grid-area: vier;
+}
+
+#fünf{
+    grid-area: fünf;
+}
+#sechs{
+    grid-area: sechs;
+}
+#minus{
+    grid-area: minus;
+}
+#sieben{
+    grid-area: sieben;
+}
+#acht{
+    grid-area: acht;
+}
+#neun{
+    grid-area: neun;
+}
+#mal{
+    grid-area: mal;
+}
+#clear{
+    grid-area: clear;
+}
+#null{
+    grid-area: null;
+}
+#gleich{
+    grid-area: gleich;
+}
+#teile{
+    grid-area: teilen;
+}
+.Taschenrechner-Container > div{
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    margin: 0.8rem;
+    background-color: var(--buttons);
+    transition: background-color 1s;
+}
+
+@media (max-width: 425px){
+    .Taschenrechner-Container{
+        width: 90%;
+    }
+}
+
+/*=== GRID-SYTEM-CONTAINER ===*/
+
+/*=== DARK-MODE ===*/
+
+#dark-light{
+    width: 100px;
+    height: 100px;
+    background-color: var(--buttons);
+    border: 3px solid black;
+    border-radius: 100%;
+    transition: background-color 1s;
+}
+
+#dark-light{
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    background-image: var(--background-icon);
+    background-size: 80px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#dark-light:hover{
+    cursor: pointer;
+    background-color: var(--dark-rechner);
+}
+
+.darkmode{
+    --background: var(--dark-background);
+    --rechner:var(--dark-rechner);
+    --buttons:var(--dark-buttons);
+    --background-icon: url(../icons/sonne.png);
+
+    transition: all 1s;
+}
+
+p{
+    text-align: center;
+    margin-top: 1rem;
+}
+/*=== DARK-MODE ===*/
+
+/*=== Button ===*/
+
+div > button{
+    width: 90%;
+    height: 90%;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+    font-size: 2rem;
+}
+
+#gleich > button{
+    width: 98%;
+}
+
+/*=== Button ===*/
+
+/*=== SCREEN ===*/
+
+.Taschenrechner-Container > #screen{
+    color: #fff;
+    font-size: 3rem;
+    padding: 0.3rem;
+    padding-left: 0.2rem;
+    margin-bottom: 0.1rem;
+    text-align: right;
+    overflow: hidden;
+}
+
+/*=== SCREEN ===*/
