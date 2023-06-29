@@ -2,7 +2,7 @@
 
 <h3>About</h3>
 <p align="left">
-  Dieses Projekt ist ein einfacher Taschenrechner. Hier kann man einfache Berechnugnen mit den Taschenrechner machen. Dazu gehöre folgende Operationen: <strong>"Plus", "Minus", "Mal", "Geteilt"</strong>.
+  Dieses Projekt ist ein einfacher Taschenrechner. Hier kann man einfache Berechnugnen mit den Taschenrechner machen. Dazu gehören folgende Operationen: <strong>"Plus", "Minus", "Mal", "Geteilt"</strong>.
 </p>
 
 <h3 align="left">Gearbeitet mit folgenden Programmiersprachen:</h3>
